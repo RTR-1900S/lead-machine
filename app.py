@@ -4,6 +4,23 @@ import pandas as pd
 from scraper_runner import run_scraper
 from lead_scorer import score_leads, get_latest_leads_file
 from pathlib import Path
+import streamlit as st
+
+st.set_page_config(
+    page_title="Lead Machine",
+    initial_sidebar_state="expanded",
+    layout="wide"
+)
+
+# Set dark theme
+st.markdown("""
+    <style>
+    [data-testid="stAppViewContainer"] {
+        background-color: #111;
+        color: #fff;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
 # ============== PAGE CONFIGURATION ==============
 st.set_page_config(
@@ -30,7 +47,7 @@ st.markdown("""
         color: white;
     }
     .header-logo {
-        font-size: 4rem;
+        font-size: 6rem;
         font-weight: bold;
     }
     .header-text h1 {
@@ -41,10 +58,10 @@ st.markdown("""
     .header-text p {
         margin: 0;
         font-size: 1rem;
-        opacity: 0.9;
+        opacity: 1;
     }
     .metric-box {
-        background: #f0f2f6;
+        background: #1e2139 !important;
         padding: 20px;
         border-radius: 10px;
         border-left: 4px solid #667eea;
