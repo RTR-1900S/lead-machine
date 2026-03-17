@@ -1,0 +1,111 @@
+========================================
+LEAD MACHINE - QUICK START GUIDE
+========================================
+
+SETUP (ONE TIME)
+================
+1. Make sure your Gemini API key is in: config/.env
+   The file should contain: GEMINI_API_KEY=your_key_here
+
+2. That's it! Everything else is already installed.
+
+
+LAUNCH
+======
+Double-click: launch.bat
+
+The app opens in your browser. You're ready to go!
+
+
+HOW TO USE
+==========
+
+📊 Dashboard Tab
+  • See overview of recent searches
+  • Check total leads, average scores, high-quality leads
+  • Access all your previous searches
+
+🔍 Search Tab
+  • Enter business type: "restaurant", "salon", "dentist", etc.
+  • Enter city: "Orlando FL", "New York NY", etc.
+  • Set how many results: 20, 50, 100, etc.
+  • Click "Run Search"
+  • Download as CSV when done
+
+⭐ Score Leads Tab
+  • Shows leads from your latest search
+  • Click "Start Scoring" to analyze with AI
+  • Watch the progress bar fill up
+  • Review results sorted by quality
+  • Download as CSV or professionally formatted Excel
+
+  Filter by score: Use the slider to show only high-quality leads
+  Sort by: Score, Name, or Category
+
+
+KEY FEATURES
+============
+✅ Never lose data - all searches saved with timestamps
+✅ Professional logo displays in app header
+✅ Color-coded scores: Green (great), Orange (good), Red (lower priority)
+✅ Excel download with professional formatting
+✅ Progress bar shows real-time scoring updates
+✅ Filter out low-quality leads before scoring (saves API credits)
+
+
+OUTPUT FILES
+============
+All results saved to: output/ folder
+
+Format: leads_DATE_TIME.csv
+  Example: leads_2026-03-12_14-32.csv
+
+Score results:
+  Example: leads_scored_2026-03-12_14-32.csv
+  Example: leads_scored_2026-03-12_14-32.xlsx (formatted Excel)
+
+
+COMMON QUESTIONS
+================
+
+Q: Where do my search results go?
+A: Automatically saved to the output/ folder with timestamps.
+   You can access any previous search anytime.
+
+Q: What if I want to rescore leads?
+A: Use the Dashboard to find the original search file,
+   then go to Score Leads tab and it will use the latest file.
+
+Q: Can I customize which leads to score?
+A: Yes! In the Search tab, click "Clear Low-Quality Leads"
+   to remove businesses with low ratings before scoring.
+
+Q: How long does scoring take?
+A: Typically 1-2 seconds per lead. Watch the progress bar
+   for real-time updates.
+
+Q: Can I export to Excel instead of CSV?
+A: Yes! The Score Leads tab offers both:
+   - CSV (plain text)
+   - Excel (beautifully formatted with colors and proper widths)
+
+Q: Is the Excel file ready to share?
+A: Absolutely. It's professionally formatted and color-coded.
+   Perfect for sharing with anyone.
+
+Q: What if I close the app?
+A: All your results are saved. Just reopen and go to the
+   Dashboard to see everything from previous sessions.
+
+
+NEED HELP?
+==========
+• Check that config/.env has your API key
+• Check internet connection (needed for Google Maps and Gemini AI)
+• All error messages explain what went wrong and how to fix it
+• You can safely close the app anytime - nothing is lost
+
+
+THAT'S IT!
+==========
+Happy prospecting!
